@@ -1,0 +1,3 @@
+<template>
+Create Invoice
+</template>
