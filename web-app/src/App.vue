@@ -1,9 +1,9 @@
 <template>
 
   {{ msg }}
-  
 
   <p>
+    <a v-link="{ name: 'customerIndex' }">Customers</a> 
     <a v-link="{ name: 'invoiceIndex' }">Invoices</a>      
   </p>
 

@@ -1,0 +1,3 @@
+<template>
+Delete Invoice
+</template>

@@ -1,0 +1,3 @@
+<template>
+Invoice Index
+</template>

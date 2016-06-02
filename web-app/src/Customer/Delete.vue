@@ -1,0 +1,3 @@
+<template>
+Delete customer
+</template>
