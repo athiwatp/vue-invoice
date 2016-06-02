@@ -1,10 +1,20 @@
 <?php
 // Routes
 
-$app->get('/[{name}]', function ($request, $response, $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+$app->get('/customers', function ($request, $response, $args) {
+    
+    $this->logger->info("GET /customers");
+
+    $customers = ["foo","bar","baz"];
+
+    $jsonResponse = $response->withJson([
+		"status" => "success",
+		"data" => $customers
+	]);
+
+	return $jsonResponse;
 
     // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
+    //return $this->renderer->render($response, 'index.phtml', $args);
 });
+

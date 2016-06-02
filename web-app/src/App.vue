@@ -1,6 +1,7 @@
 <template>
 
   {{ msg }}
+  
 
   <p>
     <a v-link="{ name: 'invoiceIndex' }">Invoices</a>      
@@ -22,7 +23,7 @@
 export default {
   data () {
     return {
-      msg: 'Hello App!'
+      msg: 'Hello Martin!'
     }
   }
 }
