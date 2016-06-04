@@ -37,7 +37,9 @@ module.exports = {
           limit: 10000,
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      //{ test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] },
+      { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url', query: { limit: 10000 } }
     ]
   },
   devServer: {
