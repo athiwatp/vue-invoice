@@ -1,22 +1,24 @@
-# kmsquared-invoice
+# kmsquared-invoice Overview
+
 Create and manage invoices, customers and products
+
 
 ---
 
-## Web App
+### [Web App](https://github.com/kmsquared/kmsquared-invoice/tree/master/web-app)
 
-### Technology Used:
+#### Technology Used:
 * [Vue.js](https://vuejs.org/)
 * [Webpack](https://webpack.github.io/)
 * [Bootstrap 3](http://getbootstrap.com/)
 * [VueStrap](http://yuche.github.io/vue-strap/)
-
+* [Babel](https://babeljs.io/)
 
 ---
 
-## Web API
+### [Web API](https://github.com/kmsquared/kmsquared-invoice/tree/master/web-api)
 
-### Technology Used:
+#### Technology Used:
 * [Slim](http://www.slimframework.com/) - a micro PHP framework.
 
 

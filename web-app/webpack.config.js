@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: ['bootstrap-loader', './src/main.js'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -38,10 +38,18 @@ module.exports = {
           name: '[name].[ext]?[hash]'
         }
       },
-      { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' },
+      { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' },      
+      //{ test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] },
       { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url', query: { limit: 10000 } }
     ]
   },
+  /*
+  vue: {
+      loaders: {
+          scss: 'style!css!sass'
+      }
+  },
+  */
   devServer: {
     historyApiFallback: true,
     noInfo: true
