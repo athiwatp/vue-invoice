@@ -38,7 +38,7 @@ module.exports = {
           name: '[name].[ext]?[hash]'
         }
       },
-      //{ test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] },
+      { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' },
       { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url', query: { limit: 10000 } }
     ]
   },
@@ -53,6 +53,12 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vuejs.github.io/vue-loader/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
+    /*
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
+    */
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'

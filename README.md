@@ -1,12 +1,26 @@
 # kmsquared-invoice
 Create and manage invoices, customers and products
 
+---
+
 ## Web App
-To do...
+
+### Technology Used:
+* [Vue.js](https://vuejs.org/)
+* [Webpack](https://webpack.github.io/)
+* [Bootstrap 3](http://getbootstrap.com/)
+* [VueStrap](http://yuche.github.io/vue-strap/)
+
+
+---
 
 ## Web API
-To do...
 
+### Technology Used:
+* [Slim](http://www.slimframework.com/) - a micro PHP framework.
+
+
+---
 
 ## App Requirements 
 1. User can click a button/link to create invoice.
