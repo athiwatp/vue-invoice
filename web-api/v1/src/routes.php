@@ -16,6 +16,8 @@ $app->get('/customers', function ($request, $response, $args) {
 		"data" => $customers
 	]);
 
+	header('Access-Control-Allow-Origin: *');
+
     return $jsonResponse;
 });
 

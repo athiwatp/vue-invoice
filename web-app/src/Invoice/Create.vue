@@ -19,28 +19,30 @@
 				<div class="form-group">
 					<label class="col-sm-2 control-label">Invoice Number</label>
 					<div class="col-sm-10">
-						<input type="text" name="invoice-number">
+						<div class="input-group">
+    						<span class="input-group-addon">#</span>
+							<input type="text" name="invoice-number" class="form-control" placeholder="0001">
+						</div>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="col-sm-2 control-label">Invoice Date</label>
 					<div class="col-sm-10">
-						<input type="text" name="invoice-date">
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label class="col-sm-2 control-label">Due Date</label>
-					<div class="col-sm-10">
-						<input type="text" name="invoice-number">
+						<datepicker 
+							v-ref:dp 
+							:value.sync="value" 
+							:disabled-days-of-Week="disabled"
+      						:format="format.toString()">
+      					</datepicker>
+      					<input type="hidden" value="{{ value }}" name="invoice-date" class="form-control">      				
 					</div>
 				</div>
 				
 				<div class="form-group">
 					<label class="col-sm-2 control-label">Customer</label>
 					<div class="col-sm-10">
-						<input type="text" name="invoice-number">
+						<input type="text" name="invoice-number" class="form-control">
 					</div>
 				</div>
 				
@@ -74,3 +76,37 @@
 	</div>
 
 </template>
+
+
+
+<script>
+
+import { datepicker } from 'vue-strap'
+import moment from 'moment'
+
+var today = moment().format('L');
+
+
+export default {
+  components: { 
+    'datepicker': datepicker
+  },
+  data () {
+    return {
+     	disabled: [],
+	    value: today,
+        format: ['MM/dd/yyyy'],
+	    reset: true
+    }
+  },
+  watch: {
+	  disabled() {
+	    this.$refs.dp.getDateRange()
+	  },
+	  format(newV) {
+	    this.value = this.$refs.dp.stringify(new Date(this.value))
+	  }
+	}
+
+}
+</script>
