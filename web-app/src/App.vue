@@ -33,6 +33,14 @@
 
   <router-view></router-view>
 
+  <footer class="container">
+
+    <hr>
+
+    <a href="https://github.com/kmsquared/kmsquared-invoice">View on Github</a>
+
+  </footer
+
 </template>
 
 <script>
@@ -145,5 +153,9 @@ a.btn-create {
 
 .section-body {
   padding:30px 0;
+}
+
+footer {
+  padding-top:100px;
 }
 </style>

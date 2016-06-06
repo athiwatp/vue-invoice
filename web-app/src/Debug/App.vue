@@ -58,7 +58,6 @@
   </div>
 </template>
 
-
 <script>
 
 import { alert, modal } from 'vue-strap'
@@ -75,8 +74,3 @@ export default {
   }
 }
 </script>
-
-
-
-<style>
-</style>
