@@ -23,7 +23,7 @@
         <strong>Invoice Saved Successfully!</strong>
         <p>Yay! FYI: save does not persist...</p>
       </alert>
-      <div v-show="this.saveForm==true">
+      <div v-show="this.saveForm">
         <pre>
 Invoice Data:
 
