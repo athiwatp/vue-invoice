@@ -20,7 +20,7 @@ Create and manage invoices, customers and products
 
 #### Technology Used:
 * [Slim](http://www.slimframework.com/) - a micro PHP framework.
-
+* [SQLite](https://www.sqlite.org/) - lightweight SQL database engine.
 
 ---
 

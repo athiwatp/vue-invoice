@@ -38,7 +38,7 @@ export default {
   methods: {
     getCustomers() {      
       
-      this.$http.get('http://localhost:8888/customers').then(function (response) {
+      this.$http.get('http://invoice-api.kmsquared.net/v1/customers').then(function (response) {
 
           this.$set('customers', response.data)
 

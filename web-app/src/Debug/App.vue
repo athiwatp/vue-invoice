@@ -7,11 +7,6 @@
 
       <div>
         <a v-link="{ name: 'invoiceCreate' }" class="btn btn-default">Create New Invoice</a>
-        
-        <!--
-        <a v-link="{ name: 'invoiceUpdate', params: { id: 4 } }">Edit Invoice</a>
-        <a v-link="{ name: 'invoiceDelete', params: { id: 4 } }">Delete Invoice</a>
-        -->
       </div>
 
       <hr>
