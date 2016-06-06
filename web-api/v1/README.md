@@ -2,6 +2,10 @@
 
 > v1 Guide
 
+## Installation
+
+    composer install
+    
 
 ## Run Locally
     
