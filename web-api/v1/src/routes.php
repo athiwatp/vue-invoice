@@ -1,7 +1,7 @@
 <?php
 // Routes
 
-$app->get('/v1/customers', function ($request, $response, $args) {
+$app->get('/customers', function ($request, $response, $args) {
     
     $this->logger->info("GET /customers");
 
@@ -23,7 +23,7 @@ $app->get('/v1/customers', function ($request, $response, $args) {
 
 
 
-$app->get('/v1/products', function ($request, $response, $args) {
+$app->get('/products', function ($request, $response, $args) {
     
     $this->logger->info("GET /products");
 

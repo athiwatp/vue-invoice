@@ -209,7 +209,7 @@ export default {
   methods: {
     getProducts() {      
       
-      this.$http.get('http://invoice-api.kmsquared.net/v1/products').then(function (response) {
+      this.$http.get('http://invoice-api-v1.kmsquared.net/products').then(function (response) {
 
           var products = []
 
