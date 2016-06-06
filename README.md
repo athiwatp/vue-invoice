@@ -2,6 +2,7 @@
 
 Create and manage invoices, customers and products
 
+[View app in action](http://invoice-app.kmsquared.net/)
 
 ---
 
