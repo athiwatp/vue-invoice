@@ -140,8 +140,14 @@ Invoice Line Items:
 
 							</tbody>
 
-						</table>
+              <tfoot>
+                <tr>
+                  <td colspan="3"></td>
+                  <td><strong>TOTAL: ${{ invoiceItems | pluckSum 'unitPrice' 'quantity' | round 2}}</strong></td>
+                </tr>
+              </tfoot>
 
+						</table>
 
 					</div>
 				</div>
@@ -183,6 +189,11 @@ import jquery from 'jquery'
 export default {
   filters: {
     round,
+    'pluckSum': function (list, key1, key2) {
+      return list.reduce(function(total, item) {
+        return total + (item[key1] * item[key2])
+      }, 0)
+    }
   },
   components: { 
     'datepicker': datepicker,
