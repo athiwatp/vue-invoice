@@ -1,3 +1,3 @@
 <template>
-Update Invoice
+	Update Invoice
 </template>
