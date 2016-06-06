@@ -23,5 +23,27 @@ $app->get('/customers', function ($request, $response, $args) {
 
 
 
+$app->get('/products', function ($request, $response, $args) {
+    
+    $this->logger->info("GET /products");
+
+	$results = $this->db->query('SELECT * FROM Product');
+	
+	while ($row = $results->fetchArray()) {
+	    $products[] = $row;
+	}
+
+    $jsonResponse = $response->withJson([
+		"status" => "success",
+		"data" => $products
+	]);
+
+	header('Access-Control-Allow-Origin: *');
+
+    return $jsonResponse;
+});
+
+
+
 // Render index view
 //return $this->renderer->render($response, 'index.phtml', $args);
