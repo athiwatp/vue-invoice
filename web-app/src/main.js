@@ -77,8 +77,6 @@ router.map({
   },
 
 
-
-
   '/product': {
     component: Product,
     subRoutes: {

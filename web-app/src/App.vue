@@ -33,15 +33,6 @@
 
   <router-view></router-view>
 
-  <!--
-  <div>
-    DEBUG:
-    <pre>
-    Route: {{$route | json}}
-    </pre>
-  </div>
-  -->
-
 </template>
 
 <script>
