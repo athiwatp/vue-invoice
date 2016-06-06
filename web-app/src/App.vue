@@ -39,7 +39,7 @@
 
     <a href="https://github.com/kmsquared/kmsquared-invoice">View on Github</a>
 
-  </footer
+  </footer>
 
 </template>
 
