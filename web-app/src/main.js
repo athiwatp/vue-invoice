@@ -20,6 +20,12 @@ import CustomerCreate from './Customer/Create.vue'
 import CustomerUpdate from './Customer/Update.vue'
 import CustomerDelete from './Customer/Delete.vue'
 
+import Product from './Product/App.vue'
+import ProductIndex from './Product/Index.vue'
+import ProductCreate from './Product/Create.vue'
+import ProductUpdate from './Product/Update.vue'
+import ProductDelete from './Product/Delete.vue'
+
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -68,6 +74,31 @@ router.map({
       '/delete/:id': {
         name: 'customerDelete',
         component: CustomerDelete
+      }
+    }
+  },
+
+
+
+
+  '/product': {
+    component: Product,
+    subRoutes: {
+      '/': {
+        name: 'productIndex',
+        component: ProductIndex
+      },
+      '/create': {
+        name: 'productCreate',
+        component: ProductCreate
+      },
+      '/update/:id': {
+        name: 'productUpdate',
+        component: ProductUpdate
+      },
+      '/delete/:id': {
+        name: 'productDelete',
+        component: ProductDelete
       }
     }
   }

@@ -1,3 +1,3 @@
 <template>
-Create customer
+	Create customer
 </template>

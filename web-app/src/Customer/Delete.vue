@@ -1,3 +1,3 @@
 <template>
-Delete customer
+	Delete customer
 </template>

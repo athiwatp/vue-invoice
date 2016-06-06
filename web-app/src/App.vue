@@ -14,7 +14,7 @@
         <ul class="nav navbar-nav">
           <li><a v-link="{ name: 'invoiceIndex' }">Invoices</a></li>
           <li><a v-link="{ name: 'customerIndex' }">Customers</a></li>
-          <li><a href="#">Products</a></li>
+          <li><a v-link="{ name: 'productIndex' }">Products</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">

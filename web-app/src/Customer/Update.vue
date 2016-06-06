@@ -1,3 +1,3 @@
 <template>
-Update customer
+	Update customer
 </template>

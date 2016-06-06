@@ -7,7 +7,7 @@ $app->get('/customers', function ($request, $response, $args) {
 
 	$results = $this->db->query('SELECT * FROM Customer');
 	
-	while ($row = $results->fetchArray()) {
+	while ($row = $results->fetchArray( SQLITE3_ASSOC )) {
 	    $customers[] = $row;
 	}
 
@@ -29,7 +29,7 @@ $app->get('/products', function ($request, $response, $args) {
 
 	$results = $this->db->query('SELECT * FROM Product');
 	
-	while ($row = $results->fetchArray()) {
+	while ($row = $results->fetchArray( SQLITE3_ASSOC )) {
 	    $products[] = $row;
 	}
 

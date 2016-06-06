@@ -14,7 +14,9 @@
 
 		<div class="col-sm-12">
 			
-			{{ customers | json }}
+<pre>
+{{ customers | json }}
+</pre>
 
 		</div>
 

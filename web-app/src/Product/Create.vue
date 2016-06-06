@@ -1,3 +1,3 @@
 <template>
-Create Invoice
+	Create Product
 </template>

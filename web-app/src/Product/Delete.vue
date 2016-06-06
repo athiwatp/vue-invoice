@@ -1,3 +1,3 @@
 <template>
-Delete Invoice
+	Delete Product
 </template>
