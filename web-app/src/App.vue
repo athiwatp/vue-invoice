@@ -66,7 +66,6 @@ $nav-font-active: #fff;
 
 $font-header: #173257;
 
-
 .navbar-default {
   background: $bg-main;
   border-radius: 0px;

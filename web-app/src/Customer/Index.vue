@@ -32,7 +32,7 @@ export default {
   },
   data () {
     return {
-      'customers' : ''
+      'customers' : {}
     }
   },
   methods: {
